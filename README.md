@@ -2,16 +2,16 @@
 
 ### Create Posts that speak, attracts and impacts
 
-> Use AI to boost your posts on LinkedIn & X
-> Let others know about 
-**Your Skills**
-**Your Achievements**
-**Your Goals**
-**Your Thoughts**
-**Your Ideas**
-**Your Projects**
-**Your Products**
-**Your Profile**
+### Use AI to boost your posts on LinkedIn & X
+### Let others know about 
+1. **Your Skills**
+2. **Your Achievements**
+3. **Your Goals**
+4. **Your Thoughts**
+5. **Your Ideas**
+6. **Your Projects**
+7. **Your Products**
+
 
 ### How to use XPost?
 Visit [XPost](https://ai-post-creator.vercel.app) and Get Started with your first **AI-generated** post.
