@@ -14,6 +14,9 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import ThemeToggle from "./theme-toggle"
+import Logo from "./logo"
+import { Github, GithubIcon, Twitter, X } from "lucide-react"
+import Image from "next/image"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -55,7 +58,8 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="sticky top-0">
+    <NavigationMenu className="sticky top-0 px-5">
+      <Logo className="w-[45px]"/>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
@@ -67,8 +71,9 @@ export default function Navbar() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
+                    <Logo />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      XPost
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components built with Radix UI and
@@ -113,9 +118,18 @@ export default function Navbar() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <ThemeToggle />
+          
         </NavigationMenuItem>
       </NavigationMenuList>
+    <span className="flex items-center gap-4 p-1">
+      <ThemeToggle />
+      <Link href="/docs" passHref>
+        <Image src="/x.svg" width={24} height={24} alt="XPost Logo" />
+      </Link>
+      <Link href="/docs" passHref>
+        <Image src="/github.svg" width={24} height={24} alt="Post Logo" />
+      </Link>
+    </span>
     </NavigationMenu>
   )
 }
