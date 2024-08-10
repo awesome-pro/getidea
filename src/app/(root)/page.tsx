@@ -8,7 +8,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl font-sans font-bold">XPost</h1>
-        <h3>
+        <h3 className="text-twitter">
           Posts that Speak
         </h3>
 

@@ -55,11 +55,8 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="">
+    <NavigationMenu className="sticky top-0">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <ThemeToggle />
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -114,6 +111,9 @@ export default function Navbar() {
               Documentation
             </NavigationMenuLink>
           </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <ThemeToggle />
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
