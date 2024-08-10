@@ -13,6 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import ThemeToggle from "./theme-toggle"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -56,6 +57,9 @@ export default function Navbar() {
   return (
     <NavigationMenu className="">
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <ThemeToggle />
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
