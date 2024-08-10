@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/toaster";
 
 
 const fontSans = FontSans({
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <Toaster />
           </ThemeProvider>
         </body>
     </html>
