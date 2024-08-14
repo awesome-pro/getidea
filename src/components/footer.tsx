@@ -2,11 +2,12 @@ import React from 'react'
 import { FooterLink, footerLinks } from '@/data'
 import Link from 'next/link'
 import { Button } from './ui/button'
+import ThemeToggle from './theme-toggle'
 
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 text-primary p-1 text-center flex flex-col gap-0">
+    <footer className="bg-gray-100 dark:bg-gray-900 p-1 text-center flex flex-col gap-0">
         <nav className="flex md:flex-row justify-center gap-0 md:gap-2 flex-col ">
             {footerLinks.map((link: FooterLink) => (
                 <Link href={link.href} key={link.title}>
@@ -15,6 +16,7 @@ function Footer() {
             ))}
         </nav>
         <p className='text-xs'> &copy; 2024 XPost </p>
+        <ThemeToggle />
     </footer>
   )
 }

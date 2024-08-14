@@ -17,119 +17,35 @@ import ThemeToggle from "./theme-toggle"
 import Logo from "./logo"
 import { Github, GithubIcon, Twitter, X } from "lucide-react"
 import Image from "next/image"
+import { navLinks, NavLink } from "@/data"
+import { Button } from "./ui/button"
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
 
 export default function Navbar() {
   return (
     <NavigationMenu className="sticky top-0 px-5">
-      <Logo className="w-[45px]"/>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <Logo />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      XPost
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    <span className="flex items-center gap-4 p-1">
-      <ThemeToggle />
-      <Link href="/docs" passHref>
-        <Image src="/x.svg" width={24} height={24} alt="XPost Logo" />
-      </Link>
-      <Link href="/docs" passHref>
-        <Image src="/github.svg" width={24} height={24} alt="Post Logo" />
-      </Link>
-    </span>
+      <span>
+        <Link className="text-3xl font-bold text-primary" href={'/'}>
+          XPost
+        </Link>
+      </span>
+      <span className="flex gap-3 py-2 px-1 text-xs ">
+        {navLinks.map((link) => (
+            <Link href={link.href} key={link.href}>
+              <Button variant="ghost" size={'sm'}>
+                {link.title}
+              </Button>
+            </Link>
+        ))}
+      </span>
+      <div className="flex gap-1">
+        <Button variant="ghost" size={'sm'}>
+          Sign In
+        </Button>
+        <Button size={'sm'}>
+          Get Started
+        </Button>
+      </div>
     </NavigationMenu>
   )
 }

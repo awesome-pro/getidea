@@ -6,13 +6,21 @@ export interface NavLink{
 
 export const navLinks: NavLink[] = [
     {
-        title: "Home",
-        href: "/",
+        title: "About",
+        href: "/about",
     },
     {
-        title: "You Posts",
+        title: "Pricing",
         href: "/posts",
     },
+    {
+        title: "Features",
+        href: "/features",
+    },
+    {
+        title: "Contact",
+        href: "/contact",
+    }
 ]
 
 export interface FooterLink{

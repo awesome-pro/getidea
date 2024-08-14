@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster";
+import { LayoutDirectionProvider } from "@/hooks/useLayoutProvider";
 
 
 const fontSans = FontSans({
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" id="root">
       <body  
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -37,10 +38,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
-            {children}
-            <Footer />
-            <Toaster />
+            <LayoutDirectionProvider>           
+              <Navbar />
+              {children}
+              <Footer />
+              <Toaster />
+            </LayoutDirectionProvider>
           </ThemeProvider>
         </body>
     </html>

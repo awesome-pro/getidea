@@ -1,20 +1,23 @@
 "use client";
 
+import HeroSection from "@/components/hero-section";
 import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
+import YC from "@/components/yc";
+import { useLayoutDirection } from "@/hooks/useLayoutProvider";
+import Image from "next/image";
 
 export default function Home() {
-  const { toast } = useToast();
+  const { toast } = useToast(); 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-5">
+    <main className="flex h-[700px] flex-col items-center justify-center gap-5">
+      <HeroSection />
       <div className="flex flex-col items-center justify-center">      
-        <span className="flex gap-1 items-baseline">
-          <Logo />
-         <h1 className="text-6xl font-sans font-bold">Post</h1>
-        </span>
+         <h1 className="text-6xl font-sans font-bold">XPost</h1>
         <h3 className="text-twitter">
           Posts that Speak
         </h3>
@@ -32,6 +35,7 @@ export default function Home() {
           Join the Waitlist
         </Button>
       </div>
+      <YC />
     </main>
   );
 }
