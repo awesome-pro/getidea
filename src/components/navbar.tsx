@@ -39,9 +39,11 @@ export default function Navbar() {
         ))}
       </span>
       <div className="flex gap-1">
-        <Button variant="ghost" size={'sm'}>
-          Sign In
-        </Button>
+        <Link href={'/sign-in'}>
+          <Button variant="ghost" size={'sm'}>
+            Sign In
+          </Button>
+        </Link>
         <Button size={'sm'}>
           Get Started
         </Button>

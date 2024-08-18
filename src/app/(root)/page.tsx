@@ -1,14 +1,10 @@
 "use client";
 
 import HeroSection from "@/components/hero-section";
-import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import YC from "@/components/yc";
-import { useLayoutDirection } from "@/hooks/useLayoutProvider";
-import Image from "next/image";
 
 export default function Home() {
   const { toast } = useToast(); 

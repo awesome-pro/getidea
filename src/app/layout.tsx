@@ -6,7 +6,6 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster";
-import { LayoutDirectionProvider } from "@/hooks/useLayoutProvider";
 
 
 const fontSans = FontSans({
@@ -38,12 +37,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <LayoutDirectionProvider>           
               <Navbar />
               {children}
               <Footer />
               <Toaster />
-            </LayoutDirectionProvider>
           </ThemeProvider>
         </body>
     </html>

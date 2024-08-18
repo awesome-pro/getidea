@@ -11,7 +11,6 @@ function HeroSection() {
         </Link>
 
         <TextGenerateEffect words='XPost raises $10M+'
-            className='h1 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4 leading-tight'
         />
     </div>
   )
