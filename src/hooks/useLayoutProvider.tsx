@@ -9,7 +9,6 @@ export const useLayoutDirection = () => {
 };
 
 export const LayoutDirectionProvider = ({ children }: { children: React.ReactNode }) => {
-    debugger;
   const [isRTL, setIsRTL] = useState(() => {
     const storedIsRTL = localStorage.getItem("isRTL");
     return storedIsRTL === "true";
