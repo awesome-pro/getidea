@@ -19,6 +19,7 @@ import { Github, GithubIcon, Twitter, X } from "lucide-react"
 import Image from "next/image"
 import { navLinks, NavLink } from "@/data"
 import { Button } from "./ui/button"
+import { UserButton } from "@clerk/nextjs"
 
 
 export default function Navbar() {
@@ -38,16 +39,7 @@ export default function Navbar() {
             </Link>
         ))}
       </span>
-      <div className="flex gap-1">
-        <Link href={'/sign-in'}>
-          <Button variant="ghost" size={'sm'}>
-            Sign In
-          </Button>
-        </Link>
-        <Button size={'sm'}>
-          Get Started
-        </Button>
-      </div>
+      <UserButton />
     </NavigationMenu>
   )
 }
