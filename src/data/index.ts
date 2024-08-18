@@ -30,19 +30,7 @@ export interface FooterLink{
 
 export const footerLinks: FooterLink[] = [
     {
-        title: "About",
-        href: "/about",
-    },
-    {
-        title: "Contact",
-        href: "/contact",
-    },
-    {
-        title: "Terms of Service",
-        href: "/terms",
-    },
-    {
-        title: "Privacy Policy",
+        title: "Privacy",
         href: "/privacy",
     },
     {
@@ -50,7 +38,39 @@ export const footerLinks: FooterLink[] = [
         href: "/faq", 
     },
     {
-        title: "❤️ Donate ",
-        href: "/donate",
+        title: "Support",
+        href: "/support",
+    },
+]
+
+export interface Company{
+    name: string,
+    imageUrl: string,
+}
+
+export const companies: Company[] = [
+    {
+        name: "Google",
+        imageUrl: "/google.png",
+    },
+    {
+        name: "BMW",
+        imageUrl: "/bmw.png",
+    },
+    {
+        name: "React Native",
+        imageUrl: "/react-native.png",
+    },
+    {
+        name: "Netflix",
+        imageUrl: "/netflix.png",
+    },
+    {
+        name: "Microsoft",
+        imageUrl: "/microsoft.png",
+    },
+    {
+        name: "Amazon",
+        imageUrl: "/amazon.svg",
     },
 ]
