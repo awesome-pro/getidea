@@ -13,7 +13,7 @@
 7. **Your Products**
 
 
-### How to use XPost?
+### How to use GetIdea?
 Visit [XPost](https://ai-post-creator.vercel.app) and Get Started with your first **AI-generated** post.
 
 ## Project in Build

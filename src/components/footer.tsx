@@ -8,7 +8,7 @@ import ThemeToggle from './theme-toggle'
 function Footer() {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 p-1 text-center flex gap-0 items-center justify-between">
-        <p className='text-xs'> &copy; 2024 XPost </p>
+        <p className='text-xs'> &copy; 2024 GetIdea </p>
         <nav className="flex md:flex-row justify-center gap-0 md:gap-2 flex-col ">
             {footerLinks.map((link: FooterLink) => (
                 <Link href={link.href} key={link.title}>

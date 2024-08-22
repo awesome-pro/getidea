@@ -27,7 +27,7 @@ export default function Navbar() {
     <NavigationMenu className="sticky top-0 px-5">
       <span>
         <Link className="text-3xl font-bold text-primary" href={'/'}>
-          XPost
+          GetIdea
         </Link>
       </span>
       <span className="flex gap-3 py-2 px-1 text-xs ">
