@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 p-1 text-center flex gap-0 items-center justify-between">
+    <footer className="bg-slate-100 dark:bg-gray-900 p-1 text-center flex gap-0 items-center justify-between">
         <p className='text-xs'> &copy; 2024 GetIdea Inc.</p>
         <nav className="flex md:flex-row justify-center gap-0 md:gap-2 flex-col ">
             {footerLinks.map((link: FooterLink) => (

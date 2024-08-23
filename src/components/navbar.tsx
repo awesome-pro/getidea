@@ -24,7 +24,7 @@ import { UserButton } from "@clerk/nextjs"
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="sticky top-0 px-5">
+    <NavigationMenu className="sticky top-0 px-5 bg-transparent">
       <span>
         <Link className="text-3xl font-bold text-primary" href={'/'}>
           <Image src="/logo.png" width={50} height={40} alt="logo" />

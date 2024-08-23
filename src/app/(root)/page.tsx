@@ -13,7 +13,7 @@ export default function Home() {
   const { toast } = useToast(); 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-5">
+    <main className="flex min-h-screen flex-col items-center justify-center gap-5 bg-primary/10">
       <HeroSection />
       <Companies />
       <Testimonial />
