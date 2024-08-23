@@ -13,7 +13,6 @@ function HeroSection() {
         </Link>
         <TextGenerateEffect words='GetIdea'/>
         <HeroTypewriter />
-        
     </div>
   )
 }

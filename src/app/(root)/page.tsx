@@ -2,6 +2,7 @@
 
 import Companies from "@/components/companies";
 import HeroSection from "@/components/hero-section";
+import Pricing from "@/components/pricing";
 import Testimonial from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <Companies />
       <Testimonial />
+      <Pricing />
     </main>
   );
 }
