@@ -56,14 +56,6 @@ export const companies: Company[] = [
         imageUrl: "/google.png",
     },
     {
-        name: "BMW",
-        imageUrl: "/bmw.png",
-    },
-    {
-        name: "React Native",
-        imageUrl: "/react-native.png",
-    },
-    {
         name: "Netflix",
         imageUrl: "/netflix.png",
     },

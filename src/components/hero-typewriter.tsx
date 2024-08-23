@@ -6,16 +6,17 @@ import { TypewriterEffectSmooth } from "./ui/typewriter";
 export function HeroTypewriter() {
   const words = [
     {
-      text: "Create",
+      text: "Get",
     },
     {
-      text: "Posts",
+      text: "Your",
     },
     {
-      text: "that",
+      text: "Awesome",
+      className: "text-pink-500",
     },
     {
-      text: "Speak",
+      text: "Idea",
       className: "text-primary",
     },
   ];
