@@ -93,3 +93,31 @@ export const tweets: Tweet[] = [
         imageUrl: "/guillermo-rauch.jpg",
     }
 ]
+
+export interface SocialLink{
+    icon: string;
+    href: string;
+}
+
+export const socialLinks: SocialLink[] = [
+    {
+        icon: "/github.svg",
+        href: "https://github.com/a",
+    },
+    {
+        icon: "/x.svg",
+        href: "https://x.com/abhinandan_v0",
+    },
+    {
+        icon: "/linkedin.svg",
+        href: "https://www.linkedin.com/in/abhinandan-verma/",
+    },
+    {
+        icon: "/discord.svg",
+        href: "https://discord.gg/abc",
+    },
+    {
+        icon: "/youtube.svg",
+        href: "https://www.youtube.com/@typescriptmastery001",
+    }
+]
