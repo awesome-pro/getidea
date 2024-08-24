@@ -18,7 +18,6 @@ export default function Home() {
       <HeroSection />
       <Companies />
       <Testimonial />
-      <Pricing />
       <Attraction />
     </main>
   );
