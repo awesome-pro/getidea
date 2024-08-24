@@ -29,7 +29,7 @@ function PricingCard({icon, title, price, features, color}: PricingCardProps) {
                 <h1 className="text-4xl font-bold">{price}</h1>
                 <p className='text-xs'>/per month</p>
             </span>
-            <ul className="list-disc list-inside">
+            <ul className="list-inside list-image-[url('/tick.svg')]">
                 {features.map((feature, i) => (
                     <li key={i}>{feature}</li>
                 ))}
