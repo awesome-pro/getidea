@@ -19,7 +19,7 @@ import { Github, GithubIcon, Twitter, X } from "lucide-react"
 import Image from "next/image"
 import { navLinks, NavLink } from "@/data"
 import { Button } from "./ui/button"
-import { UserButton } from "@clerk/nextjs"
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
 
 
 export default function Navbar() {
@@ -39,7 +39,16 @@ export default function Navbar() {
             </Link>
         ))}
       </span>
-      <UserButton />
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+      <SignedOut>
+        <Link href="/sign-in">
+          <Button size="sm">
+            Get Started
+          </Button>
+        </Link>
+      </SignedOut>
     </NavigationMenu>
   )
 }
