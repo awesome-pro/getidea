@@ -2,11 +2,8 @@ import { SignUp } from '@clerk/nextjs'
 
 export default function Page() {
   return (
-    <div className='w-full min-h-screen flex items-center justify-center bg-[url("/image.png")] bg-cover bg-center'>
+    <div className='w-full min-h-screen flex items-center justify-center bg-[url("/image2.png")] bg-cover bg-center'>
       <SignUp />
-      <div className='lg:w-[600px]'>
-
-      </div>
     </div>
   )
 }
