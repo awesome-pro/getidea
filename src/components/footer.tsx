@@ -29,8 +29,9 @@ function Footer() {
                 ))}
             </div>
         </span>
-        <span className='text-xs'>
-            Made with 💙 by <Link href={'https://abhinandan-v.vercel.app/'} target='_blank' className='hover:text-primary hover:underline'>Abhinandan</Link>
+        <span className='text-xs flex'>
+            Made with 💙 by <Link href={'https://abhinandan-v.vercel.app/'} target='_blank' className='hover:text-primary hover:underline ml-1'>Abhinandan</Link>
+                <ThemeToggle/>
         </span>
     </footer>
   )

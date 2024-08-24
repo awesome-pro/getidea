@@ -26,8 +26,8 @@ export default function Navbar() {
   return (
     <NavigationMenu className="sticky top-0 px-5 bg-transparent">
       <span>
-        <Link className="text-3xl font-bold text-primary" href={'/'}>
-          <Image src="/logo.png" width={50} height={40} alt="logo" />
+        <Link className="text-3xl font-bold text-primary hover:bg-yellow-50" href={'/'}>
+          <Image src="/logo.svg" width={50} height={40} alt="logo" className="hover:z-20"/>
         </Link>
       </span>
       <span className="flex gap-3 py-2 px-1 text-xs ">
