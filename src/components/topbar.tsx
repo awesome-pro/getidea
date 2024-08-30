@@ -64,7 +64,7 @@ function Topbar(
         isDarkTheme ? 'text-gray-new-90' : 'text-gray-new-15'
       )}
     >
-      Get got funded 🚀
+      GetIdea got funded 🚀
     </span>
     <ChevronRightIcon
       className={clsx(
