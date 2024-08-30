@@ -94,7 +94,7 @@ export interface SocialLink{
 export const socialLinks: SocialLink[] = [
     {
         icon: "/github.svg",
-        href: "https://github.com/a",
+        href: "https://github.com/awesome-pro/getidea",
     },
     {
         icon: "/x.svg",
@@ -106,7 +106,7 @@ export const socialLinks: SocialLink[] = [
     },
     {
         icon: "/discord.svg",
-        href: "https://discord.gg/abc",
+        href: "https://discord.gg/",
     },
     {
         icon: "/youtube.svg",

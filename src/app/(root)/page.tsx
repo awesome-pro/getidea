@@ -2,6 +2,7 @@
 
 import Attraction from "@/components/attraction";
 import Companies from "@/components/companies";
+import Crystal from "@/components/crystal";
 import HeroSection from "@/components/hero-section";
 import Pricing from "@/components/pricing";
 import Testimonial from "@/components/testimonial";

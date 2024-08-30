@@ -20,6 +20,7 @@
     "@radix-ui/react-toast": "^1.2.1",
     "@react-aria/i18n": "^3.12.1",
     "@react-three/fiber": "^8.17.5",
+    "@tabler/icons-react": "^3.14.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "@types/three": "^0.167.2",

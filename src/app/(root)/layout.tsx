@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster";
+import Topbar from "@/components/topbar";
 
 
 const fontSans = FontSans({
@@ -36,6 +37,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+              <Topbar isDarkTheme={false}/>
               <Navbar />
               {children}
               <Footer />
